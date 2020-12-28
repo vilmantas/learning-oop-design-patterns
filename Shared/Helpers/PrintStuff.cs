@@ -11,28 +11,20 @@ namespace Shared.Helpers
         {
             foreach (var component in components)
             {
-                ListComponents(component);
+                PrintComponent(component);
                 Console.WriteLine();
             }
         }
 
-        public static void ListComponents(IComponent component, int indentation = 0)
+        public static void PrintComponent(IComponent component, int indentation = 0)
         {
-            var isComposite = component.IsComposite();
+            component.Print(indentation);
 
-            for (int i = 0; i < indentation * 4; i++)
+            if(!component.IsComposite()) return;
+
+            foreach (var item in component.GetChildrenComponents())
             {
-                Console.Write('-');
-            }
-
-            Console.WriteLine($"{(indentation > 0 ? "> " : "")}{component.Name}. {(isComposite ? "Total: " : "Price: ")} {component.Price}.");
-
-            if (isComposite)
-            {
-                foreach (var item in component.GetChildrenComponents())
-                {
-                    ListComponents(item, indentation + 1);
-                }
+                PrintComponent(item, indentation + 1);
             }
         }
     }

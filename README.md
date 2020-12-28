@@ -2,7 +2,7 @@
 
 
 
-## Implemented **3/23**
+## Implemented **4/23**
 
 - Abstract Factory
 - Builder
@@ -10,7 +10,7 @@
 - Prototype
 - Singleton
 - Adapter
-- Bridge
+- **Bridge**
 - **Composite**
 - **Decorator**
 - Facade

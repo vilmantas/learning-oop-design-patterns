@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Shared.Models.Bridge;
 
 namespace Shared.Models
 {
@@ -44,5 +45,15 @@ namespace Shared.Models
         public bool IsComposite() => true;
 
         public IEnumerable<IComponent> GetChildrenComponents() => _children;
+        public void Print(int indent)
+        {
+            for (int i = 0; i < indent * 4; i++)
+            {
+                IComponent.PrinterImp.Print("-");
+            }
+
+            IComponent.PrinterImp.PrintLine($"{(indent > 0 ? "> " : "")}{Name}. Total: {Price}.");
+
+        }
     }
 }

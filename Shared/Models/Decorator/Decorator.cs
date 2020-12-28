@@ -24,5 +24,7 @@ namespace Shared.Models.Decorator
         public virtual bool IsComposite() => _component.IsComposite();
 
         public virtual void RemoveComponent(IComponent component) => this._component.RemoveComponent(component);
+
+        public virtual void Print(int indent) => this._component.Print(indent);
     }
 }

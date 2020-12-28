@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Shared.Models.Bridge;
 
 namespace Shared.Models
 {
@@ -40,6 +41,16 @@ namespace Shared.Models
         public IEnumerable<IComponent> GetChildrenComponents()
         {
             throw new NotImplementedException();
+        }
+
+        public void Print(int indent)
+        {
+            for (int i = 0; i < indent * 4; i++)
+            {
+                IComponent.PrinterImp.Print("-");
+            }
+
+            IComponent.PrinterImp.PrintLine($"{(indent > 0 ? "> " : "")}{Name}. Price: {Price}.");
         }
     }
 }
