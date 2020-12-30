@@ -2,7 +2,7 @@
 
 
 
-## Implemented **4/23**
+## Implemented **5/23**
 
 - Abstract Factory
 - Builder
@@ -17,7 +17,7 @@
 - Flyweight
 - Proxy
 - Chain of Responsibility
-- Command
+- **Command**
 - Interpreter
 - Iterator
 - Mediator
