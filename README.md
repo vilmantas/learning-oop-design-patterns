@@ -2,7 +2,7 @@
 
 
 
-## Implemented **5/23**
+## Implemented **6/23**
 
 - Abstract Factory
 - Builder
@@ -19,7 +19,7 @@
 - Chain of Responsibility
 - **Command**
 - Interpreter
-- Iterator
+- **Iterator**
 - Mediator
 - Memento
 - Observer

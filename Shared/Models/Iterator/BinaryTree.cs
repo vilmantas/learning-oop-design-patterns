@@ -1,24 +1,17 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Shared.Models.Iterator
 {
-    public class SortedNodeList
+    public class BinaryTree : IEnumerable<Node>
     {
         private Node Head;
-
-        public SortedNodeList(int initValue = 0)
+        
+        public BinaryTreeFirstIterator GetIterator()
         {
-            Head = new Node
-                   {
-                       Value = initValue
-            };
-        }
-
-        public SortedNodeListDepthFirstIterator GetIterator()
-        {
-            return new SortedNodeListDepthFirstIterator(this);
+            return new BinaryTreeFirstIterator(this);
         }
 
         public Node GetHead()
@@ -38,14 +31,24 @@ namespace Shared.Models.Iterator
                 node = new Node { Value = value };
             } else if(value <= node.Value)
             {
-                AddValue(value, ref node.Left);
+                return AddValue(value, ref node.Left);
             }
             else
             {
-                AddValue(value, ref node.Right);
+                return AddValue(value, ref node.Right);
             }
 
-            return null;
+            return node;
+        }
+
+        public IEnumerator<Node> GetEnumerator()
+        {
+            return new BinaryTreeFirstIterator(this);
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return new BinaryTreeFirstIterator(this);
         }
     }
 }
