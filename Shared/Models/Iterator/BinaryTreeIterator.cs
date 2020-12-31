@@ -6,7 +6,7 @@ using Shared.Helpers;
 
 namespace Shared.Models.Iterator
 {
-    public class BinaryTreeFirstIterator : IIterator<Node>, IEnumerator<Node>
+    public class BinaryTreeIterator : IIterator<Node>, IEnumerator<Node>
     {
         private readonly BinaryTree _list;
         private Node _currentNode { get; set; }
@@ -15,7 +15,7 @@ namespace Shared.Models.Iterator
 
         private readonly Stack<Node> _traversedNodes = new Stack<Node>();
 
-        public BinaryTreeFirstIterator(BinaryTree List)
+        public BinaryTreeIterator(BinaryTree List)
         {
             _list = List;
             HeadPointer.Left = _list.GetHead();

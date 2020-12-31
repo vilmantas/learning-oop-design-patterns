@@ -9,9 +9,9 @@ namespace Shared.Models.Iterator
     {
         private Node Head;
         
-        public BinaryTreeFirstIterator GetIterator()
+        public BinaryTreeIterator GetIterator()
         {
-            return new BinaryTreeFirstIterator(this);
+            return new BinaryTreeIterator(this);
         }
 
         public Node GetHead()
@@ -43,12 +43,12 @@ namespace Shared.Models.Iterator
 
         public IEnumerator<Node> GetEnumerator()
         {
-            return new BinaryTreeFirstIterator(this);
+            return new BinaryTreeIterator(this);
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            return new BinaryTreeFirstIterator(this);
+            return new BinaryTreeIterator(this);
         }
     }
 }
