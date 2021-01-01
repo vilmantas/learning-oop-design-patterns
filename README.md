@@ -1,6 +1,6 @@
 # Design Patterns, Elements of Reusable Object-Oriented Software
 
-[Book Link](../blob/main/Docs/Design%20Patterns%2C%20Elements%20of%20Reusable%20Object-Oriented%20Software.pdf)
+[Book Link](../main/Docs/Design%20Patterns%2C%20Elements%20of%20Reusable%20Object-Oriented%20Software.pdf)
 
 ## Implemented **6/23**
 
