@@ -2,9 +2,9 @@
 
 [Book Link](../main/Docs/Design%20Patterns%2C%20Elements%20of%20Reusable%20Object-Oriented%20Software.pdf)
 
-## Implemented **7/23**
+## Implemented **8/23**
 
-- Abstract Factory
+- **Abstract Factory**
 - Builder
 - Factory Method
 - Prototype
