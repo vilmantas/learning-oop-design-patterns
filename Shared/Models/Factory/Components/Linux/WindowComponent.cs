@@ -3,7 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Shared.Models.Factory.Components.Linux
+namespace Shared.Models.Factory.Components.Linux 
+{ 
     public class LinuxWindowComponent : WindowComponent
     {
     }
