@@ -6,7 +6,7 @@
 
 - **Abstract Factory**
 - **Builder**
-- **Factory Method** // Implemented with **Abstract Factory**. Each method in **Abstract Factory** is a **Factory Method**
+- **Factory Method** -  ``(Implemented with Abstract Factory)``
 - Prototype
 - Singleton
 - Adapter
