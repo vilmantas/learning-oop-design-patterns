@@ -2,12 +2,12 @@
 
 [Book Link](../main/Docs/Design%20Patterns%2C%20Elements%20of%20Reusable%20Object-Oriented%20Software.pdf)
 
-## Implemented **10/23**
+## Implemented **11/23**
 
 - **Abstract Factory**
 - **Builder**
-- **Factory Method** -  ``(Implemented with Abstract Factory)``
-- Prototype
+- **Factory Method** -  ``Implemented with Abstract Factory - every method in the factory is a Factory Method.``
+- **Prototype** - ``Code shared with Builder implementation``
 - Singleton
 - Adapter
 - **Bridge**
