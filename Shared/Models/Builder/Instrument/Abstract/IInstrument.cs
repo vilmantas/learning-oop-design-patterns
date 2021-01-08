@@ -7,5 +7,12 @@ namespace Shared.Models.Builder.Instrument.Abstract
     public interface IInstrument
     {
         public string Name { get; set; }
+
+        public IInstrument Clone() => default;
+
+        public void Initialize()
+        {
+
+        }
     }
 }
