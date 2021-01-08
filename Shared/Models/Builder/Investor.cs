@@ -11,14 +11,12 @@ namespace Shared.Models.Builder
 
         public InvestmentPortfolio BuildInvestmentPortfolio(PortfolioBuilder builder)
         {
-            builder.BuildPortfolio();
-
-            builder.BuildSafeInstrument();
-            builder.BuildSafeInstrument();
-            builder.BuildSafeInstrument();
-            builder.BuildRiskyInstrument();
-
-            return builder.GetInvestmentPortfolio();
+            return builder.BuildPortfolio()
+                          .BuildSafeInstrument()
+                          .BuildSafeInstrument()
+                          .BuildRiskyInstrument()
+                          .BuildRiskyInstrument()
+                          .GetInvestmentPortfolio();
         }
     }
 }

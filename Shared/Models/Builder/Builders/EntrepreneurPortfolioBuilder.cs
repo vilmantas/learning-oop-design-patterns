@@ -7,14 +7,16 @@ namespace Shared.Models.Builder.Builders
 {
     public class EntrepreneurPortfolioBuilder : PortfolioBuilder
     {
-        public override void BuildRiskyInstrument()
+        public override PortfolioBuilder BuildRiskyInstrument()
         {
             _portfolio.Assets.Add(new StockOption());
+            return this;
         }
 
-        public override void BuildSafeInstrument()
+        public override PortfolioBuilder BuildSafeInstrument()
         {
             _portfolio.Assets.Add(new Stock());
+            return this;
         }
     }
 }

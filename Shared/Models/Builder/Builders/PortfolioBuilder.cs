@@ -13,19 +13,20 @@ namespace Shared.Models.Builder.Builders
             return _portfolio;
         }
 
-        public virtual void BuildPortfolio()
+        public virtual PortfolioBuilder BuildPortfolio()
         {
             _portfolio = new InvestmentPortfolio();
+            return this;
         }
 
-        public virtual void BuildSafeInstrument()
+        public virtual PortfolioBuilder BuildSafeInstrument()
         {
-
+            return this;
         }
 
-        public virtual void BuildRiskyInstrument()
+        public virtual PortfolioBuilder BuildRiskyInstrument()
         {
-
+            return this;
         }
     }
 }

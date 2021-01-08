@@ -13,10 +13,24 @@ namespace Pattern.Builder
 
             var portfolio = investor.BuildInvestmentPortfolio(new StandardPortfolioBuilder());
 
+            Console.WriteLine(" --- standard portfolio builder ---");
+            Console.WriteLine();
             foreach(IInstrument portfolioAsset in portfolio.Assets)
             {
                 Console.WriteLine(portfolioAsset.GetType().Name);
             }
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine(" --- crypto portfolio builder ---");
+            Console.WriteLine();
+            portfolio = investor.BuildInvestmentPortfolio(new CryptoPortfolioBuilder());
+
+            foreach (IInstrument portfolioAsset in portfolio.Assets)
+            {
+                Console.WriteLine(portfolioAsset.GetType().Name);
+            }
+
 
             Console.Read();
         }
