@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using Shared.Models.Adapter.Shapes;
-using Shared.Models.Adapter.Shapes.Abstract;
-using Shared.Models.Adapter.Shapes.External;
+using Shared.Models.Facade;
+using Shared.Models.Facade.Domain.Shapes;
+using Shared.Models.Facade.Domain.Shapes.Abstract;
 
-namespace Pattern.Adapter
+namespace Pattern.Facade
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             List<IShape> shapes = new List<IShape>();
 
@@ -16,12 +16,7 @@ namespace Pattern.Adapter
             shapes.Add(new Rectangle());
             shapes.Add(new Square());
 
-            double area = 0f;
-
-            foreach(IShape shape in shapes)
-            {
-                area += shape.GetArea();
-            }
+            double area = AreaCalculatorFacade.CalculateArea(shapes);
 
             Console.WriteLine(area);
 

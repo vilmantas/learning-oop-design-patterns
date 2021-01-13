@@ -2,7 +2,7 @@
 
 [Book Link](../main/Docs/Design%20Patterns%2C%20Elements%20of%20Reusable%20Object-Oriented%20Software.pdf)
 
-## Implemented **13/23**
+## Implemented **14/23**
 
 - **Abstract Factory**
 - **Builder**
@@ -13,7 +13,7 @@
 - **Bridge**
 - **Composite**
 - **Decorator**
-- Facade
+- **Facade**
 - Flyweight
 - Proxy
 - Chain of Responsibility
