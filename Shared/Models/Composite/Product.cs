@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 using Shared.Models.Bridge;
+using Shared.Models.ChainOfCommand;
 
 namespace Shared.Models
 {
-    public class Component : IComponent
+    public class Product : InformationProduct, IComponent
     {
         private INameDisplayStrategy _nameDisplayStrategy { get; set; }
 
@@ -15,11 +16,20 @@ namespace Shared.Models
 
         public float Price { get; }
 
-        public Component(string name, float price) : this(name, price, new DefaultNameDisplayStrategy())
+        public Product(string name, float price) : this(null, name, price, new DefaultNameDisplayStrategy(), null)
         {
         }
 
-        public Component(string name, float price, INameDisplayStrategy nameDisplayStrategy)
+        public Product(string name, float price, INameDisplayStrategy nameDisplayStrategy) : this(null, name, price, nameDisplayStrategy, null)
+        {
+            
+        }
+
+        public Product(InformationProduct parent, string name, float price, string information = null) : this(parent, name, price, new DefaultNameDisplayStrategy(), information)
+        {
+        }
+
+        public Product(InformationProduct parent, string name, float price, INameDisplayStrategy nameDisplayStrategy, string information) : base(parent, information)
         {
             Name = name;
             Price = price;

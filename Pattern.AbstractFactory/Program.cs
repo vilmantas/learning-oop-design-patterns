@@ -1,6 +1,5 @@
-﻿using Shared.Models.Factory.Components;
-using Shared.Models.Factory.Factories;
-using System;
+﻿using Shared.Models.Factory.Factories;
+using Shared.Models.Factory.Components;
 
 namespace Pattern.AbstractFactory
 {

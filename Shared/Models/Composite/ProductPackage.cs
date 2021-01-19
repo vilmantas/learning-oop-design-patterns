@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Shared.Models.Bridge;
+using Shared.Models.ChainOfCommand;
 
 namespace Shared.Models
 {
-    public class Composite : IComponent
+    public class ProductPackage : InformationProduct, IComponent
     {
         private INameDisplayStrategy _nameDisplayStrategy { get; set; }
 
@@ -20,11 +21,15 @@ namespace Shared.Models
 
         public float BasePrice { get; }
 
-        public Composite(string name, float basePrice) : this(name, basePrice, new DefaultNameDisplayStrategy())
+        public ProductPackage(string name, float basePrice) : this(null, name, basePrice, new DefaultNameDisplayStrategy(), null)
         {
         }
 
-        public Composite(string name, float basePrice, INameDisplayStrategy nameDisplayStrategy)
+        public ProductPackage(InformationProduct parent, string name, float basePrice, string information = null) : this(parent, name, basePrice, new DefaultNameDisplayStrategy(), information)
+        {
+        }
+
+        public ProductPackage(InformationProduct parent, string name, float basePrice, INameDisplayStrategy nameDisplayStrategy, string information) : base(parent, information)
         {
             Name = name;
             BasePrice = basePrice;
