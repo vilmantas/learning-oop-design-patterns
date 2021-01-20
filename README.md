@@ -16,7 +16,7 @@
 - **Facade**
 - **Flyweight**
 - **Proxy**
-- Chain of Responsibility
+- **Chain of Responsibility**
 - **Command**
 - Interpreter - ``Not implementing. Skipped.``
 - **Iterator**
