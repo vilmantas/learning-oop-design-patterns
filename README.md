@@ -2,7 +2,7 @@
 
 [Book Link](../main/Docs/Design%20Patterns%2C%20Elements%20of%20Reusable%20Object-Oriented%20Software.pdf)
 
-## Implemented **16/23**
+## Implemented **18/22**
 
 - **Abstract Factory**
 - **Builder**
@@ -18,10 +18,10 @@
 - **Proxy**
 - Chain of Responsibility
 - **Command**
-- Interpreter
+- Interpreter - ``Not implementing. Skipped.``
 - **Iterator**
 - Mediator
-- Memento
+- **Memento**
 - Observer
 - State
 - **Strategy**
