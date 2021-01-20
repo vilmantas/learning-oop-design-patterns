@@ -2,7 +2,7 @@
 
 [Book Link](../main/Docs/Design%20Patterns%2C%20Elements%20of%20Reusable%20Object-Oriented%20Software.pdf)
 
-## Implemented **18/22**
+## Implemented **19/22**
 
 - **Abstract Factory**
 - **Builder**
@@ -20,7 +20,7 @@
 - **Command**
 - Interpreter - ``Not implementing. Skipped.``
 - **Iterator**
-- Mediator
+- **Mediator** - ``Lack of creativity for the example.``
 - **Memento**
 - Observer
 - State
