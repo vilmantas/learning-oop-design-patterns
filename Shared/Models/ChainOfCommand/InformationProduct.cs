@@ -22,10 +22,12 @@ namespace Shared.Models.ChainOfCommand
         {
             if(CanHandle())
             {
+                Console.WriteLine("--- PRINTING INFO");
                 PrintInformation();
             }
             else
             {
+                Console.WriteLine("--- PASSING INFO REQUEST TO PARENT");
                 Parent?.HandleInformationRequest();
             }
         }
