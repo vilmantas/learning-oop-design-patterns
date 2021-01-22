@@ -2,7 +2,7 @@
 
 [Book Link](../main/Docs/Design%20Patterns%2C%20Elements%20of%20Reusable%20Object-Oriented%20Software.pdf)
 
-## Implemented **21/22**
+## Implemented **22/22**
 
 - **Abstract Factory**
 - **Builder**
@@ -25,5 +25,5 @@
 - **Observer**
 - **State**
 - **Strategy**
-- Template Method
+- **Template Method**
 - **Visitor**
