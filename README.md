@@ -2,7 +2,7 @@
 
 [Book Link](../main/Docs/Design%20Patterns%2C%20Elements%20of%20Reusable%20Object-Oriented%20Software.pdf)
 
-## Implemented **20/22**
+## Implemented **21/22**
 
 - **Abstract Factory**
 - **Builder**
@@ -23,7 +23,7 @@
 - **Mediator** - ``Lack of creativity for the example.``
 - **Memento**
 - **Observer**
-- State
+- **State**
 - **Strategy**
 - Template Method
 - **Visitor**

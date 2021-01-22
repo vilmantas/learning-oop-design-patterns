@@ -1,4 +1,5 @@
 ﻿using System;
+using Shared.Models.State;
 
 namespace Pattern.State
 {
@@ -6,7 +7,13 @@ namespace Pattern.State
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            PrinterContext ctx = new PrinterContext();
+
+            ctx.Open();
+
+            ctx.Print("Allah");
+
+            ctx.Close();
         }
     }
 }
